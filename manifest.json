@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Yonas Second Brain Clipper",
+  "version": "1.0.0",
+  "description": "Salva note e testo selezionato nell'Inbox del tuo Second Brain e importa i libri da Goodreads.",
+  "permissions": ["activeTab", "tabs", "scripting", "contextMenus", "storage"],
+  "host_permissions": [
+    "https://www.goodreads.com/*",
+    "https://*.goodreads.com/*",
+    "https://yonas.davide-valentini.it/*"
+  ],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Yonas Second Brain Clipper",
+    "default_icon": { "16": "icons/icon-16.png", "32": "icons/icon-32.png", "48": "icons/icon-48.png", "128": "icons/icon-128.png" }
+  },
+  "icons": { "16": "icons/icon-16.png", "32": "icons/icon-32.png", "48": "icons/icon-48.png", "128": "icons/icon-128.png" }
+}
